@@ -29,7 +29,7 @@ function renderSignUp() {
 const submitSignUpFunc = () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "http://localhost:3000/signup"
+    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signup"
 
     fetch(apiUrl, {
         method: 'POST',
@@ -63,7 +63,7 @@ const submitSignUpFunc = () => {
 const submitSignInFunc = ()=> {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "http://localhost:3000/signin"
+    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signin"
 
     fetch(apiUrl, {
         method: 'POST',
@@ -108,7 +108,7 @@ console.log("init here");
 
 const submitSignInWithTokenFuncAuth= (val) => {
     console.log("sign in with token");
-    const apiUrl = "http://localhost:3000/signintoken"
+    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signintoken"
     const storedJWT = getStoredJWT()
     console.log(storedJWT);
     fetch(apiUrl, {

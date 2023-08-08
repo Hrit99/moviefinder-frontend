@@ -30,7 +30,7 @@ const deleteJWT = ()=> {
 
 const submitSignInWithTokenFunc = (val) => {
     console.log("sign in with token");
-    const apiUrl = "http://localhost:3000/signintoken"
+    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signintoken"
     const storedJWT = getStoredJWT()
     console.log(storedJWT);
     fetch(apiUrl, {

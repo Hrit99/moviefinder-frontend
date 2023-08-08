@@ -79,7 +79,7 @@ document.onmousemove = function (e) {
 
 
 let movielist = document.getElementById("movielist")
-const apiUrl = "http://localhost:3000/getmovies"
+const apiUrl = "https://graceful-selkie-f72401.netlify.app/getmovies"
 let movies = []
 
 
@@ -261,7 +261,7 @@ document.getElementById("createplaylist").onclick = () => {
                 toaddMoviePlaylist.push(playlistTab.value)
             }
         });
-        fetch("http://localhost:3000/addMovie", {
+        fetch("https://graceful-selkie-f72401.netlify.app/addMovie", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -299,7 +299,7 @@ document.getElementById("createprivateplaylist").onclick = () => {
         let name = document.getElementById("pvtplaylistname").value
         let owner = getStoredJWT()
         let access = "private"
-        let apiUrl = "http://localhost:3000/createPlaylist"
+        let apiUrl = "https://graceful-selkie-f72401.netlify.app/createPlaylist"
         fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -354,7 +354,7 @@ document.getElementById("createpublicplaylist").onclick = () => {
         let name = document.getElementById("pubplaylistname").value
         let owner = getStoredJWT()
         let access = "public"
-        let apiUrl = "http://localhost:3000/createPlaylist"
+        let apiUrl = "https://graceful-selkie-f72401.netlify.app/createPlaylist"
         fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -432,7 +432,7 @@ initLists()
 async function initLists() {
     console.log("initializing lists");
     let token = getStoredJWT()
-    fetch("http://localhost:3000/getPlaylists", {
+    fetch("https://graceful-selkie-f72401.netlify.app/getPlaylists", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -458,7 +458,7 @@ async function initLists() {
             console.error('create playlist error:', error);
         })
 
-    fetch("http://localhost:3000/getPublicPlaylists", {
+    fetch("https://graceful-selkie-f72401.netlify.app/getPublicPlaylists", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -496,7 +496,7 @@ const inputHandler = function(e) {
     }else{
         lastvalsearch = searchMovies[searchMovies.length - 1]
     }
-    fetch("http://localhost:3000/getmoviesSearch", {
+    fetch("https://graceful-selkie-f72401.netlify.app/getmoviesSearch", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
