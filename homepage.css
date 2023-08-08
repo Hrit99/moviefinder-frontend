@@ -1,0 +1,276 @@
+body {
+    /* background-image: url(img/background_login.png); */
+    background-color: grey;
+}
+
+
+main {
+    padding-left: auto;
+    padding-top: 60px;
+}
+
+main ul {
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.header-button {
+    background-color: rgb(219, 95, 25);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+main li {
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.addbutton {
+    background-color: rgb(219, 95, 25);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 15px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.movietilediv {
+    word-wrap: break-word;
+}
+
+.movietitle {
+    word-wrap: break-word;
+    padding-left: 0px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.movieimage {
+    margin: auto;
+    width: 100%;
+    height: 15em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.loadmovies {
+    display: block;
+    background: none;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    margin: auto;
+}
+
+.loadmoviesdiv {
+    width: 40%;
+    margin: 0 auto
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.iconbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: orange;
+}
+
+.button {
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: rgb(219, 95, 25);
+}
+
+.iconbutton i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.options {
+    list-style-type: none;
+    position: absolute;
+    bottom: 70px;
+    right: 0px;
+    margin: 0px 6px;
+}
+
+.options li {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: none;
+}
+.btn-label{
+    padding:2px 5px;
+    margin-right:10px;
+    align-self: center;
+    user-select:none;
+    color:white;
+    border-radius: 3px;
+    }
+input {
+        display: inline-block;
+        margin: auto;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 10em;
+        height: 2em;
+        background-color: transparent;
+        border: 0px solid transparent;
+        border-bottom: 2px solid white;
+        color: white;
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .closeinp{
+        display: inline-block;
+    }
+
+.playlistTab{
+    display: block;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tabdiv {
+    width: 100%;
+    height: 30px;
+    display:flex;
+    justify-content:space-between;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.movienames li {
+    color: white;
+    margin: 20px 5px;
+    padding: 7px;
+    box-shadow:   0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+.movienames ul {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.listcheck {
+    height: 15px;
+    float: right;
+    margin-top: 0px;
+    visibility: hidden;
+}
+
+.searchdiv {
+    width: 40%;
+    margin: auto;
+}
+#searchmoviename{
+    width: 80%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+}
+#searchmoviename:focus{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    outline: none;
+}
+#searchmoviename::placeholder{
+    color: white;
+}

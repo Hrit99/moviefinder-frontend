@@ -1,0 +1,108 @@
+ body{
+    /* background-image: url(img/background_login.png) ; */
+    background-color: grey;
+ }
+ main {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.main-content {
+opacity: 1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -55%);
+
+}
+.credentials input {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 25em;
+    height: 2.5em;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+*:focus {
+    outline: none;
+}
+.remember-check-box input{
+    display: inline-block;
+    margin: auto;
+    margin-top: 30px;
+}
+.remember-check-box {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    display: inline-block;
+}
+.remember-check-box label{
+color: white;
+}
+.button {
+    display: block;
+    margin: auto;
+    margin-top: 110px;
+    width: 13em;
+    height: 38px;
+    background-color: rgb(219,95,25);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.header-button {
+    background-color: rgb(219,95,25);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    padding: 8px 15px;
+}
+.main-content h3 {
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+/* 
+.main-content div h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+} */
+/* 
+.main-content-image {
+    background-image: url(img/loginContainer.jpeg);
+    opacity: 0.3;
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    z-index: -1;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+} */

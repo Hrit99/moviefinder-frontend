@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <div class="tabdiv">
+            <div class="playlistTab" id="pvtplaylistTab">
+                <span>My Playlists</span>
+            </div>
+            <div class="playlistTab" id="pubplaylistTab">
+                <span>Public Playlists</span>
+            </div>
+        </div>
+        <div class="movienames">
+            <ul id="movienames">
+            </ul>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="button iconbutton">
+            <i class="fa-solid fa-plus" id="createplaylist"></i>
+            <ul class="options">
+                <li id="createprivateplaylistli">
+                    <span class="btn-label" id="btn-label-pvt">Private playlist</span>
+                    <div class="iconbutton" id="createprivateplaylist">
+                        <i class="pvticon" id="pvticon">Pvt</i>
+                    </div>
+                </li>
+                <li id="createpublicplaylistli">
+                    <span class="btn-label" id="btn-label-pub">Public playlist</span>
+                    <div class="iconbutton" id="createpublicplaylist">
+                        <i class="pubicon" id="pubicon">Pub</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <button type="submit" class="header-button" id="logout-button">Log out</button>
+        <button type="submit" class="header-button" id="navbarbtn" onclick="openNav()">☰ Playlists</button>
+        <div class="searchdiv">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" name="searchname" id="searchmoviename" placeholder="Search" required autocomplete="off"></input>
+        </div>
+    </header>
+    <main id="main">
+        <ul id="movielist" class="movielist"></ul>
+        <div class="loadmoviesdiv">
+            <button type="button" id="loadmovies" class="loadmovies" style="cursor:pointer;">Load more movies</button>
+            <p style="width: 50%; margin:auto; text-align: center; color: white;">^</p>
+        </div>
+    </main>
+</body>
+<script src="jwt.js"></script>
+<script src="auth.js"></script>
+<script src="homepage.js"></script>
+
+</html>
