@@ -1,4 +1,4 @@
-const serveruri = "https://moviefinder-5gk8.onrender.com"
+let serveruri = "https://moviefinder-5gk8.onrender.com"
 
 const headerBtn = document.getElementById("header-button") 
 headerBtn.onclick = ()=> {
