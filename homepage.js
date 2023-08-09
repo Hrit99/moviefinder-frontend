@@ -33,6 +33,8 @@ document.onmousemove = function (e) {
                 preclickedbtn = clickablebtn
                 console.log("on click");
                 if (clickablebtn.innerText == "+") {
+                    activePlaylistTab.id != "pvtplaylistTab"
+                    document.getElementById("pvtplaylistTab").click
                     clickablebtn.innerText = "Selected"
                     console.log(clickablebtn.previousElementSibling.getAttribute("value"));
                     toAddMovie = clickablebtn.previousElementSibling.getAttribute("value")
@@ -402,6 +404,7 @@ document.getElementById("createpublicplaylist").onclick = () => {
         }
     }
 }
+
 
 document.getElementById("pvtplaylistTab").onclick = () => {
     if (activePlaylistTab.id != "pvtplaylistTab") {
