@@ -1,4 +1,4 @@
-let serveruri = "https://moviefinder-5gk8.onrender.com"
+serveruri = "https://moviefinder-5gk8.onrender.com"
 
 document.getElementById("logout-button").onclick = () => {
     console.log("log out");
