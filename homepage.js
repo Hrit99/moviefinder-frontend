@@ -34,8 +34,12 @@ document.onmousemove = function (e) {
                 console.log("on click");
                 if (clickablebtn.innerText == "+") {
                     console.log(activePlaylistTab.id);
-                    activePlaylistTab.id = "pubplaylistTab"
-                    document.getElementById("pvtplaylistTab").click
+                    if (activePlaylistTab.id != "pvtplaylistTab") {
+                        activePlaylistTab.style.borderBottom = "none"
+                        activePlaylistTab = document.getElementById("pvtplaylistTab")
+                        activePlaylistTab.style.borderBottom = "2px solid orange"
+                        renderPrivatePlaylist()
+                    }
                     clickablebtn.innerText = "Selected"
                     console.log(clickablebtn.previousElementSibling.getAttribute("value"));
                     toAddMovie = clickablebtn.previousElementSibling.getAttribute("value")
