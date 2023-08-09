@@ -30,7 +30,7 @@ const deleteJWT = ()=> {
 
 const submitSignInWithTokenFunc = (val) => {
     console.log("sign in with token");
-    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signintoken"
+    const apiUrl = "https://moviefinder-5gk8.onrender.com/signintoken"
     const storedJWT = getStoredJWT()
     console.log(storedJWT);
     fetch(apiUrl, {

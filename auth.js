@@ -1,4 +1,4 @@
-
+const serveruri = "https://moviefinder-5gk8.onrender.com"
 
 const headerBtn = document.getElementById("header-button") 
 headerBtn.onclick = ()=> {
@@ -29,7 +29,7 @@ function renderSignUp() {
 const submitSignUpFunc = () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signup"
+    const apiUrl = `${serveruri}/signup`
 
     fetch(apiUrl, {
         method: 'POST',
@@ -63,7 +63,7 @@ const submitSignUpFunc = () => {
 const submitSignInFunc = ()=> {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signin"
+    const apiUrl = `${serveruri}/signin`
 
     fetch(apiUrl, {
         method: 'POST',
@@ -108,7 +108,7 @@ console.log("init here");
 
 const submitSignInWithTokenFuncAuth= (val) => {
     console.log("sign in with token");
-    const apiUrl = "https://graceful-selkie-f72401.netlify.app/signintoken"
+    const apiUrl = `${serveruri}/signintoken`
     const storedJWT = getStoredJWT()
     console.log(storedJWT);
     fetch(apiUrl, {
