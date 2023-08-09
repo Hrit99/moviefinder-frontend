@@ -34,7 +34,7 @@ document.onmousemove = function (e) {
                 console.log("on click");
                 if (clickablebtn.innerText == "+") {
                     console.log(activePlaylistTab.id);
-                    activePlaylistTab.id = "pvtplaylistTab"
+                    activePlaylistTab.id = "pubplaylistTab"
                     document.getElementById("pvtplaylistTab").click
                     clickablebtn.innerText = "Selected"
                     console.log(clickablebtn.previousElementSibling.getAttribute("value"));
