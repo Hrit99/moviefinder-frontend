@@ -33,6 +33,7 @@ document.onmousemove = function (e) {
                 preclickedbtn = clickablebtn
                 console.log("on click");
                 if (clickablebtn.innerText == "+") {
+                    console.log(activePlaylistTab.id);
                     activePlaylistTab.id = "pvtplaylistTab"
                     document.getElementById("pvtplaylistTab").click
                     clickablebtn.innerText = "Selected"
